@@ -1,0 +1,55 @@
+/* The CSS until line 25 serves the normalization of the browser defaults */
+@import "modern-normalize";
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* Here my CSS starts */
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.grid-container {
+  margin: 0 auto;
+  height: 100vh;
+  width: calc(100vh * (7 / 5));
+  display: grid;
+  grid-template: 2fr 10fr / 3fr 11fr;
+}
+
+aside {
+  background-color: #2da3ece5;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+main {
+  background-color: rgb(226, 233, 248);
+  grid-column: 2 /3;
+}
+
+header {
+  background-color: white;
+  grid-column: 2 / 3;
+}
