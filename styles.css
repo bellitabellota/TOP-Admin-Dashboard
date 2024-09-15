@@ -41,13 +41,13 @@ body {
 }
 
 aside {
-  padding: 1.5rem 2rem;
+  padding: 1rem 1rem;
   background-color: #2da3ece5;
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
   color:white;
   grid-template-rows: repeat(auto-fit, minmax(min-content, 2rem));
-  row-gap: 3.5rem;;
+  row-gap: 1em;;
 }
 
 aside > div > *{
@@ -55,34 +55,35 @@ aside > div > *{
   grid-auto-flow: column;
   justify-content: start;
   grid-column: min-content;
+  align-items: center;
 }
 
 .section2 > div, .section3 > div {
-  padding: 0.6rem 0;
+  padding: 0.3rem 0;
+
 }
 
 aside p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .logo {
-  height: 3.5rem;
+  height: 30px;
+  justify-self: center;
 }
 
 aside img {
-  height: 1.9rem;
-  justify-self: end;
-  
+  height: 1.3rem;
+  justify-self: center;
+
 }
 
 
 
 .sidebar-title {
-  font-size: 2rem;
-  padding: 0 0 0 0.5rem;
-  align-self: center;
+  font-size: 1.2rem;
 }
 
 main {
@@ -93,4 +94,100 @@ main {
 header {
   background-color: white;
   grid-column: 2 / 3;
+  display: grid;
+  grid: 2fr 3fr / 5fr 3fr;
+  position: relative;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.502);
 }
+
+
+
+.first-header-row-left {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 0 2rem 0 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+}
+
+.search-icon {
+  height: 1.25rem;
+}
+
+input {
+  height: 1rem;
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgba(194, 193, 193, 0.309);
+}
+
+.first-header-row-right {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  place-items: center;
+
+}
+
+.profile-picture-small {
+  height: 1.7rem;
+  width: 1.7rem;
+  object-fit: cover;
+  border-radius: 1rem;;
+  padding: 0.1rem;
+}
+
+.bell-icon {
+  height: 1.3rem;
+  width: 1.3rem;
+
+}
+
+.first-header-row-right p {
+  justify-self: start;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.profile-picture-big {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.second-header-row-left {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+.greeting, .profile-name {
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.greeting {
+  font-size: 0.6rem;
+}
+
+.second-header-row-right {
+  place-content: center;
+}
+
+.second-header-row-right button {
+background-color: #2da3ece5;
+color: white;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 1rem;
+margin-right: 0.5rem;
+font-size: 0.7rem;
+font-weight: 600;
+}
+
