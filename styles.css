@@ -169,7 +169,6 @@ input {
 
 .greeting, .profile-name {
   font-weight: 600;
-  margin-left: 0.5rem;
 }
 
 .greeting {
@@ -177,7 +176,9 @@ input {
 }
 
 .second-header-row-right {
-  place-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
 
 .second-header-row-right button {
