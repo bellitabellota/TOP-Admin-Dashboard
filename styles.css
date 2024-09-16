@@ -129,7 +129,34 @@ input {
   padding-right: 1rem;
   padding-left: 1rem;
   place-items: center;
+ 
+}
 
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.716);
+  color: white;
+  font-size: 0.6rem;
+  width: 10rem;
+  padding: 0.5rem;
+  text-wrap: wrap;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip a {
+  color: white;
 }
 
 .profile-picture-small {
